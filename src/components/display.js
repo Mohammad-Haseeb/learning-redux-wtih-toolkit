@@ -4,7 +4,8 @@ import { useSelector } from 'react-redux';
 
 export default function Display(){
     const valueGetter= useSelector((state)=>{
-               return state.counter.count;
+         console.log("Checker",state)
+               return state.values.value;
     })
     return(
         <>
